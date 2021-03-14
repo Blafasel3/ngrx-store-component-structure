@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ngrx-store-component-structure"
+  "defaultProject": "ngrx-store-component-structure",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

@@ -1,0 +1,6 @@
+<ng-container *ngIf="(todoFacade.selectDialogOpen$ | async) === true">
+  <app-todo-list
+    [todos]="todoFacade.fetchTodos$ | async"
+    (addTodoClicked)="onAddTodoClicked()"
+  ></app-todo-list>
+</ng-container>

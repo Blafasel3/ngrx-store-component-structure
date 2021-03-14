@@ -1,0 +1,15 @@
+.todo-container {
+  display: grid;
+  grid-template-columns: 3fr 7fr 50px;
+
+  & > .todo-item {
+    padding: 15px;
+    text-align: left;
+    vertical-align: center;
+    border: 1px solid black;
+  }
+
+  & > .description {
+    resize: none;
+  }
+}
