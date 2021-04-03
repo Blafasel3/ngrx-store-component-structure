@@ -1,3 +1,18 @@
+@use '../../../../abstract';
+
+.container {
+  border-top: 1px solid abstract.$navy_blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo-item {
+  min-width: 25%;
+  max-width: 100%;
+  flex-basis: calc(calc(50em - 100%) * 999);
+  height: 100%;
+}
+
 button {
   margin: 15px;
   margin-left: 0;

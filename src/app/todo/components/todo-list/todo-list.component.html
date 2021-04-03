@@ -1,4 +1,6 @@
-<ng-container *ngFor="let todo of todos; trackBy: todoTrackBy">
-  <app-todo-item [todo]="todo"></app-todo-item>
-</ng-container>
+<div class="container">
+  <ng-container *ngFor="let todo of todos; trackBy: todoTrackBy">
+    <app-todo-item class="todo-item" [todo]="todo"></app-todo-item>
+  </ng-container>
+</div>
 <button (click)="onAddTodoClicked()">Add Todo</button>
