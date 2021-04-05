@@ -2,13 +2,14 @@
 
 .todo-item-container {
   display: grid;
-  grid-template-columns: 3fr 7fr 50px;
+  grid-template-columns: 1fr 2fr 50px;
   font-family: abstract.$font-family;
   font-size: abstract.$font-size;
 
   :is(textarea, input) {
     border: none;
     outline: none;
+    overflow: overlay;
     border-bottom: 1px solid abstract.$navy_blue;
     transition: border 250ms ease;
 
